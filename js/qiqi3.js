@@ -1,0 +1,1 @@
+let next3=document.querySelector(".next3");
