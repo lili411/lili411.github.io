@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的小屋</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(to right,#e7a9fa,#9adef0);
+        margin: 0;
+    }
+    .bigdiv{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 150px;
+        height: 180px;
+        background-color: rgb(255, 255, 255);
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    .smalldiv{
+        font-weight: 500;
+        text-align: center;
+        line-height: 20px;
+        font-size: 3px;
+        height: 20px;
+        width: 150px;
+        background-color: rgb(233, 235, 213);
+    }
+    .shortcut{
+        width: 100%;
+        height: 60px;
+        background-image: linear-gradient(to right,#f7ea8d,#82e7df);
+        text-align: center;
+        line-height: 60px;
+        font-size: 30px;
+    }
+    .shortcut img{
+        width: 350px;
+        height: 60px;
+    }
+    .bigbigdiv{
+        display: inline-block;
+        border-radius: 3px;
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 170px;
+        height: 200px;
+        background-color: rgb(68, 61, 73);
+    }
+</style>
+<body>
+    <div class="shortcut">
+        <img src="picture/小屋.png" alt="">
+    </div>
+
+    <div class="bigbigdiv" id="div1">
+    <div class="bigdiv">
+        <img src="picture/psc (1).jpg">
+        <div class="smalldiv">HappyBithday</div>
+    </div>
+    </div>
+
+<div class="bigbigdiv" id="div2">
+    <div class="bigdiv">
+        <img src="picture/psc (16).jpg">
+        <div class="smalldiv">转圈圈</div>
+    </div>
+</div>
+
+<div class="bigbigdiv" id='div3'>
+    <div class="bigdiv">
+        <img src="picture/psc (17).jpg">
+        <div class="smalldiv">记承天夜游</div>
+    </div>
+</div>
+
+<div class="bigbigdiv" id='div4'>
+    <div class="bigdiv">
+        <img src="picture/白中大门.jpg">
+        <div class="smalldiv">初中小故事</div>
+    </div>
+</div>
+</body>
+<script>
+  
+    div1.addEventListener("click",()=>{
+        location.href='brithday.html'
+    })
+    div2.addEventListener("click",()=>{
+        location.href='circle.html'
+    })
+    div3.addEventListener("click",()=>{
+        location.href='poet.html'
+    })
+    div4.addEventListener("click",()=>{
+        location.href='trace.html'
+    })
+</script>
+</html>
