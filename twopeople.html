@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: darkslateblue;
+    }
+    .d1{
+        width: 500px;
+        height: 650px;
+        border: 5px brown solid;
+        margin-left: 50%;
+        background-color: rgb(222, 171, 238);
+        transform: translate(-50%,0);
+    }
+    .d2{
+        height: 100%;
+        width: 100%;   
+        display: none;
+    }
+    img{
+        width:100%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .d3{
+        font-size: large;
+        text-align: center;
+        line-height: 20px;
+    }
+</style>
+<body>
+    <div class="d1">
+        <div class="d2">
+            <img src="./picture/psc (9).jpg" alt="">
+            <div class="d3">看得出来在浴室,好像等下我奶奶就要来了</div>
+        </div>
+        <div class="d2">
+            <img src="./picture/psc (10).jpg" alt="">
+            <div class="d3">10级美颜驾驭不住</div>
+        </div>
+        <div class="d2">
+            <img src="./picture/psc (12).jpg" alt="" style="width:80%">
+            <div class="d3">看起来确实是憨批</div>
+        </div>
+        <div class="d2">
+            <img src="./picture/psc (13).jpg" alt=""style="width:80%">
+            <div class="d3">长腿男（女）神</div>
+        </div>
+        <div class="d2">
+            <img src="./picture/psc (14).jpg" alt="">
+            <div class="d3">叠罗汉</div>
+        </div>
+        <div class="d2">
+            <img src="./picture/psc (15).jpg" alt="" style="width:50%">
+            <div class="d3">我才洗完头，是不是你给我洗的？</div>
+        </div>
+    </div>
+</body>
+<script>
+    const d2s=document.querySelectorAll(".d2");
+    d2s[0].style.display='block';
+    for(let i=0;i<6;i++){
+        d2s[i].addEventListener("click",()=>{
+            for(let i of d2s){
+                i.style.display='none'
+            }
+            d2s[(i+1)%6].style.display='block'
+        })
+    }
+ 
+</script>
+</html>
