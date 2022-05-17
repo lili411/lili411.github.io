@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(24, 23, 23);
+    }
+    .d1{
+        width: 700px;
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .t1{
+        color: white;
+        text-align: center;
+    }
+    ul{
+        width: 700px;
+        
+    }
+    li{
+        font-size: larger;
+        width: 550px;
+        margin-left: 50%;
+        transform: translate(-50%);
+        color: white;
+        list-style: none;
+        display: none;
+    }
+</style>
+<body>
+    <div class="d1">
+        <div class="d2">
+            <h2 class="t1">你知道你怎么让我迷上你的吗?</h2>
+            <ul class="u1">
+                <li>最开始可能只是觉得有一个女朋友是一件很酷的事情</li>
+                <li>可能是因为你的美貌，可能是因为不忍拒绝，可能是一时冲动</li>
+                <li>但是后来啊......</li>
+                <li>我们有好多好多次差一点就咫尺天涯</li>
+                <li>差一点就天隔一方</li>
+                <li>但是你我都阴差阳错的选择了我们现在都都觉得对的答案</li>
+                <li>就像两个学渣在做一张充满未知的卷子</li>
+                <li>都是一脸懵，却有选择了相同且正确的答案</li>
+                <li>这本就是一件豪赌</li>
+                <li>可能正因为我们深知我们的不易</li>
+                <li>所以我们都不愿放弃自己精心经营的关系</li>
+                <li>所以我不甘心你不是我的</li>
+                <li>所以我不会让你逃出的手掌心</li>
+                <li>这可能最重要，但是可能不限与此</li>
+                <li>我的愿望很小</li>
+                <li>小到不过是一手撸着猫，一手抱着你</li>
+                <li>我也愿望也很大</li>
+                <li>大到想要一直占据你</li>
+                <li>想让你的心中是我</li>
+                <li>想让你的身体里面也是我</li>
+                <li>想和你一起吃饭，一起看电影，一起走路，一起抱怨现实的操蛋</li>
+                <li>想和你一起做爱</li>
+                <li>我真的深深的被你迷住了</li>
+            </ul>
+        </div>   
+    </div>
+</body>
+<script>
+    let lis=document.querySelectorAll('li')
+    let i=0
+    document.addEventListener('click',()=>{
+        lis[i].style.display='block'
+        i++;
+    })
+        
+    
+</script>
+</html>
